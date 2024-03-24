@@ -13,7 +13,7 @@ En cas de que no el tingueu instal·lat, en aquesta part s'expoicarà pas a pas 
 
 ¡Comencem a explorar el món de Cassandra!
 
-![CassandraLogo_img](images\1280px-Cassandra_logo.svg.png)
+![CassandraLogo_img](images/1280px-Cassandra_logo.svg.png)
 
 
 
