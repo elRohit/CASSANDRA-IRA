@@ -36,8 +36,18 @@ sudo apt-get install docker
 
  ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/1.png)
 
-2. Per instal·lar [Docker](https://www.docker.com), hem d'executar la següent comanda en consola:
+2. Instal·lem la imatge de cassandra
 ```
-sudo apt-get install docker
+sudo docker pull cassandra:latest
 ``` 
+> Output
 
+ ![docker_image_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/2.png)
+
+3. Creem una nova xarxa Cassandra
+```
+sudo docker network create <nom_xarxa>
+``` 
+> Output
+
+ ![docker_create_network](../images/CASSANDRA/INSTAL·ACIO/DOCKER/3.png)
