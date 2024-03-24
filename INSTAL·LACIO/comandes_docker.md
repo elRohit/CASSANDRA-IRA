@@ -26,7 +26,7 @@ network:
 ```
 sudo apt-get update && sudo apt upgrade
 ```
-## Instal·lacio de Docker
+## Instal·lacio de Cassandra
 
 1. Per instal·lar [Docker](https://www.docker.com), hem d'executar la següent comanda en consola:
 ```
@@ -51,3 +51,11 @@ sudo docker network create <nom_xarxa>
 > Output
 
  ![docker_create_network](../images/CASSANDRA/INSTAL·ACIO/DOCKER/3.png)
+
+4. Creació d'una instància de cassandra per poder accedir a la base de dades:
+```
+sudo docker run -d --name cassandra --hostname cassandra --network <nom_xarxa> cassandra
+``` 
+> Output
+
+ ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/5.png)
