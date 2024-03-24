@@ -7,4 +7,6 @@ En aquesta guia, explorarem els conceptes bàsics de Cassandra, com ara la seva 
 
 Per començar, assegureu-vos de tenir Cassandra instal·lat i configurat correctament al vostre entorn de desenvolupament. A continuació, podeu seguir els passos per crear i gestionar taules, realitzar consultes, i aprendre altres funcionalitats avançades de Cassandra.
 
+En cas de que no el tingueu ninstal·lat, en aquesta part s'expoicarà pas a pas com fer·ho
+
 ¡Comencem a explorar el món de Cassandra!
