@@ -28,11 +28,16 @@ sudo apt-get update && sudo apt upgrade
 ```
 ## Instal·lacio de Docker
 
-1. Per instal·lar [Docker](), hem d'executar la següent comanda en consola:
+1. Per instal·lar [Docker](https://www.docker.com), hem d'executar la següent comanda en consola:
 ```
 sudo apt-get install docker
 ```
 > Output
 
- ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/1.png)    
+ ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/1.png)
+
+2. Per instal·lar [Docker](https://www.docker.com), hem d'executar la següent comanda en consola:
+```
+sudo apt-get install docker
+``` 
 
