@@ -39,7 +39,7 @@ curl https://downloads.apache.org/cassandra/KEYS | sudp apt-key add -
 ```
 > Output
 
- ![local_image_install](../../images/CASSANDRA/INSTAL·LACIÓ/LOCAL/1.png))
+ ![local_image_install](../../images/CASSANDRA/INSTAL·LACIÓ/LOCAL/1.png)
 
 3. Creem una nova xarxa Cassandra
 ```
