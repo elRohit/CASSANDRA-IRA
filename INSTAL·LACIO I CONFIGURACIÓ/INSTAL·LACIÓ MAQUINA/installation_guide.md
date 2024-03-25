@@ -32,9 +32,6 @@ sudo apt-get update && sudo apt upgrade
 ```
 echo "deb https://debian.cassandra.apache.org 41x main" | sudo tee -a /etc/cassandra.sources.list
 ```
-> Output
-
- ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/1.png)
 
 2. Afegim i obtenim la clauper utilitzar Apache Cassandra
 ```
@@ -42,7 +39,7 @@ curl https://downloads.apache.org/cassandra/KEYS | sudp apt-key add -
 ```
 > Output
 
- ![local_image_install](../images/CASSANDRA/INSTAL·ACIO/15.png)
+ ![local_image_install](../images/CASSANDRA/INSTAL·ACIO/LOCAL/1.png)
 
 3. Creem una nova xarxa Cassandra
 ```
