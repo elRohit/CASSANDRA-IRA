@@ -7,5 +7,6 @@
 sudo apt-get install lvm2
 ```
 > Output
+ ![alt text](../../images/CASSANDRA/CONFIGURACIÓ/LVM/1.jpg)
 
- ![local_image_key](../../images/CASSANDRA/INSTAL·LACIÓ/LOCAL/1.png)
+ 
