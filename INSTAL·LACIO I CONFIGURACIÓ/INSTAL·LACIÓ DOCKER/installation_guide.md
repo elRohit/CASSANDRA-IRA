@@ -42,7 +42,7 @@ sudo docker pull cassandra:latest
 ``` 
 > Output
 
- ![local_image_install](../images/CASSANDRA/INSTAL·ACIO/15.png)
+ ![local_image_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/2.png)
 
 3. Creem una nova xarxa Cassandra
 ```
