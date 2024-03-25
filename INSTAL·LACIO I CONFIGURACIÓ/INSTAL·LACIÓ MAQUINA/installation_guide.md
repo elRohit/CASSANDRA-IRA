@@ -1,7 +1,7 @@
-# Instal·lació de Apache Cassandra amb Docker (Linux version Ubuntu 22.04 LTS) 
+# Instal·lació de Apache Cassandra en local (Linux version Debian 11) 
 ## Autor: Rohit Kumar Kumar, Ismael Flor Blas i Alejandro Pérez Pretel
 
-# Instal·lació de Docker
+# Instal·lació en Local
 
 ## Configuracions prèvies
 
@@ -28,21 +28,21 @@ sudo apt-get update && sudo apt upgrade
 ```
 ## Instal·lacio de Cassandra
 
-1. Per instal·lar [Docker](https://www.docker.com), hem d'executar la següent comanda en consola:
+1. Per instal·lar Cassandra via local tindrem que afegir en un arxiu .list on es troba el paquet
 ```
-sudo apt-get install docker
+echo "deb https://debian.cassandra.apache.org 41x main" | sudo tee -a /etc/cassandra.sources.list
 ```
 > Output
 
  ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/1.png)
 
-2. Instal·lem la imatge de cassandra
+2. Afegim i obtenim la clauper utilitzar Apache Cassandra
 ```
-sudo docker pull cassandra:latest
-``` 
+curl https://downloads.apache.org/cassandra/KEYS | sudp apt-key add -
+```
 > Output
 
- ![local_image_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/2.png)
+ ![local_image_install](../images/CASSANDRA/INSTAL·ACIO/15.png)
 
 3. Creem una nova xarxa Cassandra
 ```
