@@ -7,6 +7,7 @@
 sudo apt-get install lvm2
 ```
 > Output
+
  ![alt text](../../images/CASSANDRA/CONFIGURACIÓ/LVM/1.jpg)
 
 2. Creació del volum fisic
