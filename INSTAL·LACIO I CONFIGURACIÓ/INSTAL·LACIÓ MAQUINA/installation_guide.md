@@ -36,10 +36,10 @@ echo "deb https://debian.cassandra.apache.org 41x main" | sudo tee -a /etc/cassa
 
  ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/1.png)
 
-2. Instal·lem la imatge de cassandra
+2. Afegim i obtenim la clauper utilitzar Apache Cassandra
 ```
-sudo docker pull cassandra:latest
-``` 
+curl https://downloads.apache.org/cassandra/KEYS | sudp apt-key add -
+```
 > Output
 
  ![docker_image_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/2.png)
