@@ -39,38 +39,51 @@ curl https://downloads.apache.org/cassandra/KEYS | sudp apt-key add -
 ```
 > Output
 
- ![local_image_install](../../images/CASSANDRA/INSTAL·LACIÓ/LOCAL/1.png)
+ ![local_image_key](../../images/CASSANDRA/INSTAL·LACIÓ/LOCAL/1.png)
 
-3. Creem una nova xarxa Cassandra
+3. Fem "upgrade" als paquets
 ```
-sudo docker network create <nom_xarxa>
+sudo apt-get upgrade
+``` 
+
+4. Creació d'una instància de cassandra per poder accedir a la base de dades
+```
+sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key A278B781FE4B2BDA
 ``` 
 > Output
 
- ![docker_create_network](../images/CASSANDRA/INSTAL·ACIO/DOCKER/3.png)
+![local_activate_key](../../images/CASSANDRA/INSTAL·LACIÓ/LOCAL/2.png)
 
-4. Creació d'una instància de cassandra per poder accedir a la base de dades:
+5. Instal·lem el paquet Cassandra
 ```
-sudo docker run -d --name cassandra --hostname cassandra --network <nom_xarxa> cassandra
+sudo apt-get install cassandra
 ``` 
 > Output
 
- ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/5.png)
+![local_pack_install](../../images/CASSANDRA/INSTAL·LACIÓ/LOCAL/3.png)
 
-5. Creació d'una instància de cassandra per poder accedir a la base de dades:
+6. Inicialització del servei Cassandra
 ```
-sudo docker exec -it <docker_name>
+sudo systemctl start cassandra.service
 ``` 
+
+7. Comprovació del servei
+```
+sudo systemctl status cassandra.service
+```
 > Output
 
- ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/6.png)
+![local_status](../../images/CASSANDRA/INSTAL·LACIÓ/LOCAL/4.png)
 
+# Configuració de Apache Cassandra
 
-# Configuració de  Apache Cassandra
+Per configurar Cassandra utilitzant la comanda `sudo nano /etc/cassandra/cassandra.yaml`, en aquest arxiu pots configurar per exemple la IP de resposta del servei.
 
-Per configurar Cassandra utilitzant la comanda `sudo docker exec -it cassandra`, segueix els passos següents:
+# Us de Apache Cassandra
 
-1. Executa la comanda `sudo docker exec -it cassandra cqlsh` per accedir a l'interfície de línia de comandes de Cassandra.
+Per utilitzar Cassandra pot seguir aquest passos:
+
+1. Executa la comanda `cqlsh` per accedir a l'interfície de línia de comandes de Cassandra.
 
 2. Un cop dins de l'interfície de línia de comandes de Cassandra, pots executar les comandes CQL per configurar la base de dades segons les teves necessitats.
 
@@ -81,6 +94,4 @@ Per configurar Cassandra utilitzant la comanda `sudo docker exec -it cassandra`,
 5. També pots inserir dades a les taules utilitzant la comanda `INSERT INTO`.
 
 6. Un cop hagis configurat la base de dades segons les teves necessitats, pots sortir de l'interfície de línia de comandes de Cassandra utilitzant la comanda `exit`.
-
-Això és tot! Ara ja hauràs configurat Cassandra utilitzant la comanda `sudo docker exec -it cassandra`.
 
