@@ -33,7 +33,7 @@ sudo apt-get update && sudo apt upgrade
 echo "deb https://debian.cassandra.apache.org 41x main" | sudo tee -a /etc/cassandra.sources.list
 ```
 
-2. Afegim i obtenim la clauper utilitzar Apache Cassandra
+2. Afegim i obtenim la clau per utilitzar Apache Cassandra
 ```
 curl https://downloads.apache.org/cassandra/KEYS | sudp apt-key add -
 ```
