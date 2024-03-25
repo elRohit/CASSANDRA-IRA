@@ -75,9 +75,13 @@ sudo systemctl status cassandra.service
 
 ![local_status](../../images/CASSANDRA/INSTAL·LACIÓ/LOCAL/4.png)
 
-# Configuració de  Apache Cassandra
+# Configuració de Apache Cassandra
 
-Per configurar Cassandra utilitzant la comanda `sudo docker exec -it cassandra`, segueix els passos següents:
+Per configurar Cassandra utilitzant la comanda `sudo nano /etc/cassandra/cassandra.yaml`, en aquest arxiu pots configurar per exemple la IP de resposta del servei.
+
+# Us de Apache Cassandra
+
+Per utilitzar Cassandra pot seguir aquest passos:
 
 1. Executa la comanda `cqlsh` per accedir a l'interfície de línia de comandes de Cassandra.
 
@@ -90,6 +94,4 @@ Per configurar Cassandra utilitzant la comanda `sudo docker exec -it cassandra`,
 5. També pots inserir dades a les taules utilitzant la comanda `INSERT INTO`.
 
 6. Un cop hagis configurat la base de dades segons les teves necessitats, pots sortir de l'interfície de línia de comandes de Cassandra utilitzant la comanda `exit`.
-
-Això és tot! Ara ja hauràs configurat Cassandra utilitzant la comanda `sudo docker exec -it cassandra`.
 
