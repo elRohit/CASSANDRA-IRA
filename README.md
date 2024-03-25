@@ -1,7 +1,8 @@
+# Taula de continguts
+1. [Introducció a SGBD Apache Cassandra](#introducció-a-sgbd-apache-cassandra)
+2. [Webgrafia](#webgrafia)
 
 # Introducció a SGBD Apache Cassandra
-
-
 
 Apache Cassandra és un sistema de gestió de bases de dades distribuïdes i altament escalable. És una base de dades NoSQL que ofereix una gran disponibilitat i tolerància a fallades. Cassandra està dissenyada per gestionar grans volums de dades distribuïdes en múltiples nodes, proporcionant una alta velocitat de lectura i escriptura.
 
@@ -14,6 +15,15 @@ En cas de que no el tingueu instal·lat, en aquesta part s'expoicarà pas a pas 
 ¡Comencem a explorar el món de Cassandra!
 
 ![CassandraLogo_img](images/1280px-Cassandra_logo.svg.png)
+
+# Webgrafia
+1. Introducció a [Querys de CQL](https://docs.datastax.com/en/cql-oss/3.x/cql/cql_using/useAboutCQL.html)
+2. Introducció a [Big Data](https://core.ac.uk/download/pdf/44310803.pdf)
+3. Muntatge de [Apache Cassandra - Whitepaper](/docs/Whitepaper_Data-Modeling-in-Apache-Cassandra_4736_4.9.21.pdf)
+4. Video explicatiu sobre Apache Cassandra. [[Link]](https://www.youtube.com/watch?v=7bM5e2xa6Ic&t=7s)
+5. Video explicatu sobre Cassandra NOSQL. [[Link]](https://www.youtube.com/watch?v=Xq1ociMAOmw&t=684s)
+
+
 
 
 
