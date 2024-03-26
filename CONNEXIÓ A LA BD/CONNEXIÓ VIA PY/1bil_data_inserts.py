@@ -29,3 +29,5 @@ for i in range(5000):
 result = session.execute("SELECT * FROM billon.generate;")
 for row in result:
     print(row)
+
+cluster.shutdown()
