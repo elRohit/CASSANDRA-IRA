@@ -34,7 +34,7 @@ sudo apt-get install docker
 ```
 > Output
 
- ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/1.png)
+ ![docker_install](../../images/CASSANDRA/INSTAL·LACIÓ/DOCKER/1.png)
 
 2. Instal·lem la imatge de cassandra
 ```
@@ -42,7 +42,7 @@ sudo docker pull cassandra:latest
 ``` 
 > Output
 
- ![docker_image_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/2.png)
+ ![docker_image_install](../../images/CASSANDRA/INSTAL·LACIÓ/DOCKER/2.png)
 
 3. Creem una nova xarxa Cassandra
 ```
@@ -58,7 +58,7 @@ sudo docker run -d --name cassandra --hostname cassandra --network <nom_xarxa> c
 ``` 
 > Output
 
- ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/5.png)
+ ![docker_install](../../images/CASSANDRA/INSTAL·LACIÓ/DOCKER/5.png)
 
 5. Creació d'una instància de cassandra per poder accedir a la base de dades:
 ```
@@ -66,12 +66,21 @@ sudo docker exec -it <docker_name>
 ``` 
 > Output
 
- ![docker_install](../images/CASSANDRA/INSTAL·ACIO/DOCKER/6.png)
+ ![docker_install](../../images/CASSANDRA/INSTAL·LACIÓ/DOCKER/6.png)
 
 
 # Configuració de  Apache Cassandra
 
 Per configurar Cassandra utilitzant la comanda `sudo docker exec -it cassandra`, segueix els passos següents:
+
+## Abans d'Utilitzar Cassandra s'han de fer alguns canvis a la configuració de Cassandra 
+
+1. Primerament mirem si el servei Cassandra està actiu o no amb la comanda `nodetool status`
+> Output
+
+
+
+
 
 1. Executa la comanda `sudo docker exec -it cassandra cqlsh` per accedir a l'interfície de línia de comandes de Cassandra.
 
