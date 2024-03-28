@@ -78,9 +78,18 @@ Per configurar Cassandra utilitzant la comanda `sudo docker exec -it cassandra`,
 1. Primerament mirem si el servei Cassandra està actiu o no amb la comanda `nodetool status`
 > Output
 
+![status](../../images/CASSANDRA/CONFIGURACIÓ/CASSANDRA/1.png)
+`UN` Significa que és UP Normal(Funcionant).
 
+2. Uns dels parèmetres que hem de configurar són la IP o IPs que escoltará el servidor, en aquest cas `192.168.1.200`, anomenat com `listen_address`:
+>Output
+  ![lsiten_addr](../../images/CASSANDRA/CONFIGURACIÓ/CASSANDRA/2.png)
 
+3. Juntament amb el seu port interfície que surtirá a internet
+>Output
+![rpc_addr_port](../../images/CASSANDRA/CONFIGURACIÓ/CASSANDRA/3.png)
 
+## Configuració Bàsica per accedir i Utilitzar Cassandra
 
 1. Executa la comanda `sudo docker exec -it cassandra cqlsh` per accedir a l'interfície de línia de comandes de Cassandra.
 
