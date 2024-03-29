@@ -18,3 +18,5 @@ for row in result:
 # Cerrar la sesión y la conexión
 session.shutdown()
 cluster.shutdown()
+
+# https://aprenderbigdata.com/introduccion-apache-cassandra/
