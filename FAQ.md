@@ -7,8 +7,7 @@ avui en dia aquest tipus de base de dades ofereixen flexibilitat, escalabilitat 
 
 ## Quin tipus de SGBD es Apache Cassandra?
 
-És un DBMS No relacional, orientat a tipus COLUMN-FAMILY, o sigui que guada les seves dades dins de columnes. 
-FALTA ESPECIFICAR MÉS SOBRE AQUESTA PART
+És un DBMS **No relacional**, orientat a tipus _COLUMN-FAMILY_, o sigui que guada les seves dades dins de columnes.
 
 ## Quins són els requisits del sistema?
 
@@ -16,32 +15,32 @@ Com la majoria de bases de dades, el rendiment de Cassandra millora amb més nuc
 Tot i que Cassandra es pot fer funcionar en petits servidors per a proves o entorns de desenvolupament (incloent Raspberry Pis), 
 un servidor de producció mínim requereix, com a mínim: 
 
-- 2 nuclis (L'addició de nuclis de CPU addicionals augmenta el rendiment tant de lectures com d'escriptura.)
-- 8 GB de RAM
+- `2 nuclis` (L'addició de nuclis de CPU addicionals augmenta el rendiment tant de lectures com d'escriptura.)
+- `8 GB` de RAM
 
 Cassandra està dissenyat per proporcionar redundància a través de múltiples servidors independents i barats. 
-Per tant, els servidors amb múltiples discs sovint se serveixen millor utilitzant RAID0 o JBOD que RAID1 o RAID5.
+Per tant, els servidors amb múltiples discs sovint se serveixen millor utilitzant `RAID0` o `JBOD` que `RAID1` o `RAID5`.
 
 
 ## Quines són les instruccions per arrancar / verificar status / apagar servei de la base de dades?
 
 Per arrancar cassandra:
-- sudo service cassandra start
+- `sudo service cassandra start`
 
 Per verificar status:
-- nodetool status
+- `nodetool status` o `service cassandra status`
 
 Per apagar servei:
-- sudo service cassandra stop
+- `sudo service cassandra stop` o `nodetool stopdaemon`
 
 ## A on es troba i quin nom rep el fitxer de configuració?
 
 Es pot trobar al següent directori:
-- /etc/cassandra/cassandra.yaml	
+- `/etc/cassandra/cassandra.yaml`
 
 ## A on es troben físicament els fitxers de dades (per defecte)?
 
-?????
+- `/var/lib/cassandra/data/<db_name>/`
 
 ## En quins ports escolta Apache Cassandra?
 
