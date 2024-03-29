@@ -1,28 +1,56 @@
 # Preguntas frecuentes (FAQ)
 
-## ¿Cómo puedo empezar a utilizar esta aplicación?
+## Que es Apache Cassandra?
 
-Para empezar a utilizar esta aplicación, sigue los siguientes pasos:
+Apache cassandra es una base de dades NoSQL, va ser creada per bases de dades amb el fi de gestionar gran volum de dades, 
+avui en dia aquest tipus de base de dades ofereixen flexibilitat, escalabilitat i velocitat al navegar entre aquest tipus de dades.
 
-1. Descarga el archivo de instalación desde nuestro sitio web.
-2. Ejecuta el archivo de instalación y sigue las instrucciones en pantalla.
-3. Una vez instalada la aplicación, ábrela y sigue el proceso de configuración inicial.
+## Quin tipus de SGBD es Apache Cassandra?
 
-## ¿Cuáles son los requisitos del sistema?
+És un DBMS No relacional, orientat a tipus COLUMN-FAMILY, o sigui que guada les seves dades dins de columnes. 
+FALTA ESPECIFICAR MÉS SOBRE AQUESTA PART
 
-Los requisitos del sistema para utilizar esta aplicación son los siguientes:
+## Quins són els requisits del sistema?
 
-- Sistema operativo: Windows 10, macOS 10.14 o superior, o Linux.
-- Procesador: Intel Core i5 o equivalente.
-- Memoria RAM: 8 GB o más.
-- Espacio en disco: 100 GB de espacio libre.
+Com la majoria de bases de dades, el rendiment de Cassandra millora amb més nuclis de CPU, més RAM i discs més ràpids. 
+Tot i que Cassandra es pot fer funcionar en petits servidors per a proves o entorns de desenvolupament (incloent Raspberry Pis), 
+un servidor de producció mínim requereix, com a mínim: 
 
-## ¿Cómo puedo contactar al soporte técnico?
+- 2 nuclis (L'addició de nuclis de CPU addicionals augmenta el rendiment tant de lectures com d'escriptura.)
+- 8 GB de RAM
 
-Si necesitas ayuda o tienes alguna pregunta, puedes contactar a nuestro equipo de soporte técnico de las siguientes formas:
+Cassandra està dissenyat per proporcionar redundància a través de múltiples servidors independents i barats. 
+Per tant, els servidors amb múltiples discs sovint se serveixen millor utilitzant RAID0 o JBOD que RAID1 o RAID5.
 
-- Enviando un correo electrónico a support@example.com.
-- Llamando al número de teléfono +1 123-456-7890.
-- Utilizando el chat en vivo en nuestro sitio web.
 
-¡Estas son solo algunas preguntas frecuentes! Si tienes alguna otra pregunta, no dudes en contactarnos.
+## Quines són les instruccions per arrancar / verificar status / apagar servei de la base de dades?
+
+Per arrancar cassandra:
+- sudo service cassandra start
+
+Per verificar status:
+- nodetool status
+
+Per apagar servei:
+- sudo service cassandra stop
+
+## A on es troba i quin nom rep el fitxer de configuració?
+
+Es pot trobar al següent directori:
+- /etc/cassandra/cassandra.yaml	
+
+## A on es troben físicament els fitxers de dades (per defecte)?
+
+?????
+
+## En quins ports escolta Apache Cassandra?
+
+Per defecte, Cassandra utilitza el port 7000 per a la comunicació amb el clúster (7001 si SSL està habilitat).
+El port 9042 per als clients de protocol natiu, i 7199 per a JMX. 
+Tots els ports són TCP.
+
+
+## Quina modificació/passos caldrien fer per canviar aquests ports a uns altres?
+
+Els ports de comunicació internode i de protocol natiu són configurables en cassandra-yaml. 
+El port JMX és configurable en cassandra-env.sh (a través de les opcions JVM). 
