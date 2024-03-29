@@ -1,12 +1,13 @@
 import random
 from datetime import *
 from cassandra.cluster import Cluster
+import time as t
 
 ciudades = ["Hamburg", "Berlin", "Munich", "Paris", "London", "Madrid", "Lloret", "Blanes"]
-
+inicio = t.time()
 #params = {"contact_points": ["172.22.0.2"], "port": 9042}
 
-cluster = Cluster(contact_points=['172.22.0.2'], port=9042)
+cluster = Cluster(contact_points=['localhost'], port=9042)
 session = cluster.connect()
 session.execute("DROP KEYSPACE IF EXISTS billon;")
 session.execute("CREATE KEYSPACE IF NOT EXISTS billon WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor': 1};")
@@ -23,11 +24,10 @@ for i in range(5000):
     day = random.randint(1, 28)  # Asumiendo máximo de 28 días para simplificar
     fecha = datetime(year, month, day).strftime('%Y-%m-%d')
 #    temperatura = round(random.uniform(-10, 40), 1)
-    session.execute(f"INSERT INTO billon.generate (id,ciudad, dia) VALUES ({i},'{ciudad}', '{fecha}');")
-
+    session.execute(f"INSERT INTO billon.generate (id,ciudad, dia) VALUES ({i},'{ciudad}', '{fecha}');")    
+print("Data inserted successfully!")
+fin = t.time()
+print(f"Temps Execució:{fin - inicio} seg")
 #session.execute("CREATE INDEX IF NOT EXISTS idx ON billon.generate (ciudad, dia);")
-result = session.execute("SELECT * FROM billon.generate;")
-for row in result:
-    print(row)
 
 cluster.shutdown()
