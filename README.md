@@ -23,6 +23,7 @@ En cas de que no el tingueu instal·lat, en aquesta part s'expoicarà pas a pas 
 4. Video explicatiu sobre Apache Cassandra. [[Link]](https://www.youtube.com/watch?v=7bM5e2xa6Ic&t=7s)
 5. Video explicatu sobre Cassandra NOSQL. [[Link]](https://www.youtube.com/watch?v=Xq1ociMAOmw&t=684s)
 6. Projecte Bases de dades d'Extrematura. [[Link]](https://dehesa.unex.es/bitstream/10662/4413/1/TFGUEX_2016_Caso_Agundez.pdf)
+7. Cassandra en [Python](https://aprenderbigdata.com/introduccion-apache-cassandra/)
 
 
 
