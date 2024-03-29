@@ -24,6 +24,10 @@ En cas de que no el tingueu instal·lat, en aquesta part s'expoicarà pas a pas 
 5. Video explicatu sobre Cassandra NOSQL. [[Link]](https://www.youtube.com/watch?v=Xq1ociMAOmw&t=684s)
 6. Projecte Bases de dades d'Extrematura. [[Link]](https://dehesa.unex.es/bitstream/10662/4413/1/TFGUEX_2016_Caso_Agundez.pdf)
 7. Cassandra en [Python](https://aprenderbigdata.com/introduccion-apache-cassandra/)
+8. Unix Firewall [Rules](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
+9. Copiar dades d'una consulta o Taula a un [Fitxer Extern](https://www.atlassian.com/data/sql/export-to-csv-from-psql)
+10. Gestio d'autenticacio en [cqlsh](https://docs.datastax.com/en/cql-oss/3.x/cql/cql_reference/cqlCreateUser.html)
+11. Gestio de permisos en cqlsh amb [`GRANT`](https://docs.datastax.com/en/cql-oss/3.x/cql/cql_reference/cqlGrant.html) o [`REVOKE`](https://docs.datastax.com/en/cql-oss/3.x/cql/cql_reference/cqlRevoke.html)
 
 
 
