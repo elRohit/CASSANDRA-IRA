@@ -44,6 +44,7 @@ networks:
 6. Executem la comanda en Windows: `docker-compose up -d` o en Linux: `sudo docker-compose up -d`
 
 [Exemple De docker-compose.yml](<INSTAL·LACIÓ DOCKER/docker-compose.yml>)
+
 ## Instal·lació de Cassandra en Linux
 
 Per instal·lar Cassandra en Linux, segueix els passos següents:
