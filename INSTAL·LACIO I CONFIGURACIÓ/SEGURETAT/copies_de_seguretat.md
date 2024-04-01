@@ -17,7 +17,7 @@ COPY institut.alumnes TO 'alumnes.csv' WITH DELIMITER = ';';
 ```
 2. Per automatitzar utilitzarem `crontab`, i un arxiu python per a que axecuti automaticament les copies
 ```
-`copiar.py`
+'copiar.py'
 
 from cassandra.cluster import Cluster
 
