@@ -49,7 +49,7 @@ Es pot trobar al següent directori:
 - `/etc/cassandra/cassandra.yaml`
 
 ## Com puc veure a quins directoris estan tots els arxius o configuracions de cassandra?
-- es poden veure amb varies caomandes que venen en linux definides, com per exemple `whereis` / `find`:
+- Es poden veure amb varies comandes que venen en linux definides, com per exemple `whereis` / `find`:
 ```
 sudo whereis cassandra
 ``` 
