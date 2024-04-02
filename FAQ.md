@@ -38,6 +38,15 @@ Per apagar servei:
 Es pot trobar al següent directori:
 - `/etc/cassandra/cassandra.yaml`
 
+## Com puc veure a quins directoris estan tots els arxius o configuracions de cassandra?
+- es poden veure amb varies caomandes que venen en linux definides, com per exemple `whereis` / `find`:
+```
+sudo whereis cassandra
+``` 
+o també amb 
+```
+sudo find . -name cassandra -print
+```
 ## A on es troben físicament els fitxers de dades (per defecte)?
 
 - `/var/lib/cassandra/data/<db_name>/`
