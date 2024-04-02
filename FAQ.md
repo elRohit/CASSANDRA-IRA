@@ -12,7 +12,9 @@ avui en dia aquest tipus de base de dades ofereixen flexibilitat, escalabilitat 
 • `Column`: és el nivell més baix que hi ha, es tracta d'una estructura amb 3 camps, que són: el nom de la columna, el valor que té i el timestamp. El timestamp conté el moment (data, hora en mil·lisegons) en la qual s'ha realitzat la inserció. 
 • `Supercolumn`: és un conjunt de Columns. 
 • `ColumnFamily`: es tracta d'un conjunt de Columns ordenades, de tal manera que cada fila conté una clau. Les ColumnFamily es poden definir com les taules de les bases de dades relacionals. 
-• `Keyspace`: és el nivell més alt en el model de dades. La keyspace conté totes les famílies de columnes. Perquè ens resulti més senzill d'entendre, podem comparar-ho amb la base de 
+• `Keyspace`: és el nivell més alt en el model de dades. La keyspace conté totes les famílies de columnes. Perquè ens resulti més senzill d'entendre, podem comparar-ho amb la base de dades en el model relacional:
+
+![CassandraKeyspace_img](images/keyspace.png)
 
 ## Quins són els requisits del sistema?
 
