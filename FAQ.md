@@ -21,6 +21,9 @@ un servidor de producció mínim requereix, com a mínim:
 Cassandra està dissenyat per proporcionar redundància a través de múltiples servidors independents i barats. 
 Per tant, els servidors amb múltiples discs sovint se serveixen millor utilitzant `RAID0` o `JBOD` que `RAID1` o `RAID5`.
 
+# Quines versions de Apache Cassandra existeixen?
+
+...
 
 ## Quines són les instruccions per arrancar / verificar status / apagar servei de la base de dades?
 
@@ -61,4 +64,4 @@ Tots els ports són TCP.
 ## Quina modificació/passos caldrien fer per canviar aquests ports a uns altres?
 
 Els ports de comunicació internode i de protocol natiu són configurables en cassandra-yaml. 
-El port JMX és configurable en cassandra-env.sh (a través de les opcions JVM). 
+El port JMX és configurable en cassandra-env.sh (a través de les opcions JVM).
