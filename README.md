@@ -37,5 +37,8 @@ En cas de que no el tingueu instal·lat, en aquesta part s'expoicarà pas a pas 
 
 
 
-
+>Fet per ... Estudiants D'ASIX SA PALOMERA - BLANES
+- Alejandro Pérez Pretel <br>
+- Isamel Flor Blas <br>
+- Rohit Kumar Kumar
 
