@@ -30,7 +30,15 @@ Per tant, els servidors amb múltiples discs sovint se serveixen millor utilitza
 
 # Quines versions de Apache Cassandra existeixen?
 
-...
+Datastax Devcenter ofereix una plataforma amb base de dades Apache Cassandra. Hi ha tres versions disponibles: Free, Pay As You Go i Enterprise.
+
+- La versió Free és totalment gratuïta i permet treballar amb la base de dades sense cap límit. No inclou suport ni serveis de manteniment.
+
+- La versió Pay As You Go ofereix un servei on pagues segons l'ús que fas. Aquesta versió et permet escalar la teva base de dades i distribuir els nodes segons les teves necessitats. Si ho desitges, pots actualitzar a la versió Enterprise en qualsevol moment.
+
+- La versió Enterprise inclou tots els beneficis de la versió Pay As You Go i ofereix funcionalitats addicionals. A més de l'escalabilitat i la distribució de nodes, aquesta versió proporciona controls de salut per als teus servidors i serveis, optimització avançada, descomptes per volums i accés a un enginyer professional amb un temps de resposta màxim de 15 minuts.
+
+- En resum, Datastax Devcenter ofereix una plataforma flexible per treballar amb Apache Cassandra, amb opcions gratuïtes i de pagament que permeten adaptar-se a les necessitats de cada projecte.
 
 ## Quines són les instruccions per arrancar / verificar status / apagar servei de la base de dades?
 
