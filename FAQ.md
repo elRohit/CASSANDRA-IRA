@@ -7,7 +7,12 @@ avui en dia aquest tipus de base de dades ofereixen flexibilitat, escalabilitat 
 
 ## Quin tipus de SGBD es Apache Cassandra?
 
-És un DBMS **No relacional**, orientat a tipus _COLUMN-FAMILY_, o sigui que guada les seves dades dins de columnes.
+És un DBMS no relacional, es de tipus clau-valor, Clau-valor, la base de dada més senzilla i popular. En aquest sistema cada element es troba identificat per una clau única, la qual cosa ens permet obtenir les dades d'una forma molt ràpida que utilitza els següents conceptes:
+
+• `Column`: és el nivell més baix que hi ha, es tracta d'una estructura amb 3 camps, que són: el nom de la columna, el valor que té i el timestamp. El timestamp conté el moment (data, hora en mil·lisegons) en la qual s'ha realitzat la inserció. 
+• Supercolumn: és un conjunt de Columns. 
+• ColumnFamily: es tracta d'un conjunt de Columns ordenades, de tal manera que cada fila conté una clau. Les ColumnFamily es poden definir com les taules de les bases de dades relacionals. 
+• Keyspace: és el nivell més alt en el model de dades. La keyspace conté totes les famílies de columnes. Perquè ens resulti més senzill d'entendre, podem comparar-ho amb la base de 
 
 ## Quins són els requisits del sistema?
 
