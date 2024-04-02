@@ -36,7 +36,7 @@ keytool -import -v -trustcacerts -alias node0 -file node0.cer -keystore truststo
 keytool -list -keystore keystore.node1
 keytool -list -keystore truststore.node1
 ```
-7. A continuació, haurem d'habilitar la encriptació en cadascún dels nodes modificant el fitxer cassandra.yml:
+7. A continuació, haurem d'habilitar l'encriptació en cadascun dels nodes modificant el fitxer cassandra.yml:
 ```
 client_encryption_options:
     enabled: true
@@ -54,3 +54,4 @@ client_encryption_options:
     store_type: JKS
     cipher_suites: [TLS_RSA_WITH_AES_256_CBC_SHA]
 ```
+8. Finalment, reiniciem Cassandra per aplicar els canvis.
